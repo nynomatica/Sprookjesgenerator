@@ -1,0 +1,2 @@
+def tokenizer(woord):
+    pass
