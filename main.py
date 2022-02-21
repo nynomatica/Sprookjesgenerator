@@ -13,9 +13,8 @@
 # Also i'm searching for people that want to improve on the idea of this project. I'm not a programmer and have zero
 # knowledge of programming and am bound to make mistakes. So any constructive critique is welcome. For the rest have
 # fun !
-
-
-
+import random
+from random import choice
 
 import globalevent
 from generators.CityNameRND import cityname
@@ -26,7 +25,9 @@ from generators.randomword import randomword
 from generators.verbRND import verbRND
 from maakmeervoud import maakmeervoud
 from woorden import vowelcount
+from wordmanipulations.captallist import capitallist
 from wordmanipulations.plural import plural
+from wordmanipulations.uniquelist import uniquelist
 from wordmanipulations.vowelconsonantpairs import vowelconsonantpairs
 
 
@@ -55,10 +56,41 @@ if __name__ == '__main__':
     print("fase 2 : making generators")
     print(randomword(10))
 
-    for i in range(1000):
+    l = []
+    print("Random female names (old dutch)")
+
+    for i in range(2000):
         #print(verbRND())
-        # print(femalernd())
-        print(cityname())
+        #print(femalernd())
+        # l.append(cityname())
+        l.append(femalernd())
+    l.sort()
+    l = uniquelist(l)
+    l = capitallist(l)
+    print(l)
+    print(len(l))
+
+    print("-------------------------------------------------------------")
+    l = []
+    print("Random city names (old dutch)")
+    for i in range(2000):
+        #print(verbRND())
+        #print(femalernd())
+        # l.append(cityname())
+        l.append(cityname())
+    l.sort()
+    l = uniquelist(l)
+    l = capitallist(l)
+    print(l)
+    print(len(l))
+    print("-------------------------------------------------------------")
+    print("So to put is all together it becomes something like")
+    random.seed(11)
+    stad = cityname().capitalize()
+    meisje = femalernd().capitalize() +' '+malename()+'sdochter'
+    time = choice(["morgen","volgende week","vandaag","volgende maand"])
+    print("")
+    print(f"{meisje} gaat {time} naar {stad}.")
 
     # print(plural(vowelconsonantpairs('boom')))
     # print(R.zelfstandigenaamwoorden)

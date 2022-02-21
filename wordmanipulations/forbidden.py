@@ -1,11 +1,14 @@
-import os
-
 from R import unspeakable
-from wordmanipulations.hidevowels import hidevowels
+
+# unspeakable=['luul','laal','lool','rld','oow','uich','urts','uirts','lkk','lol','lal','lil','rar',
+#              'rir','rer','rmm','rll','uimm','oomm','aamm','rtt','rkk','rss','rch','rtt','brj','blj',
+#              'lel','aaa','uuu','iii','ooo','eee','bluu','lile','lul','liel','bruu','luul','aach','eech','uuch','ooch']
+
+def IsUnspeakable(letters):
+    return forbidden(letters) == ""
+
 
 def forbidden(letters):
-    # novowels = hidevowels(letters)
-
     for group in unspeakable:
         if group in letters:
             return ""
