@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from singlelast import singlelast
+from wordmanipulations.singlelast import singlelast
 
 
 class Test(TestCase):

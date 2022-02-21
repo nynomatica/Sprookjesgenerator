@@ -1,4 +1,4 @@
-from homogene import homogene
+from venv.homogene import homogene
 from woorden import vowelcount
 
 

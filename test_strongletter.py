@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from strongletter import strongletter
+from wordmanipulations.strongletter import strongletter
 
 
 class Test(TestCase):

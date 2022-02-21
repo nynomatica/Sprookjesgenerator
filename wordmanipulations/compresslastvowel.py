@@ -1,16 +1,13 @@
-from wordmanipulations.homogene import homogene
-from woorden import isvowel, vowelcount
-
-
-def compresslastvowel(woord):
+def compresslastvowel(group):
     """
-    bijvoorbeeld
+    will compress the lastvowelgroup is homogene and len>1
+    example :
     boom -> bom
-    maar niet
+    but not
     biek -> biek
     :param groups:
     """
-    groups = vowelcount(woord)
+    groups = group
     groups.reverse()
 
     for i in range(0,len(groups)):
@@ -18,6 +15,6 @@ def compresslastvowel(woord):
             if len(groups[i])>1 and homogene(groups[i]):
                 groups[i] = groups[i][0]
                 groups.reverse()
-                return ''.join(groups)
+                return groups
     groups.reverse()
-    return  ''.join(groups)
+    return groups
