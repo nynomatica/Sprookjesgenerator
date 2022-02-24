@@ -40,7 +40,7 @@ class myApp():
 
         Sum = self.world.totalpopulation()
         print(f"Total population {Sum}")
-        #city.savetocvs(city,'/home/ray/Desktop/steden.csv',self.world)
+        city.savetocvs(city,'/home/ray/Desktop/steden.csv',self.world)
 
 
 
