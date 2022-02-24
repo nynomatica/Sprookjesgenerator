@@ -1,8 +1,8 @@
 from unittest import TestCase
 
-from generators import MaleNameRND
+import MaleNameRND
 
 
 class Test(TestCase):
     def test_malename(self):
-        self.assertTrue(MaleNameRND(),True)
+        self.assertTrue(MaleNameRND(), True)

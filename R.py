@@ -1,5 +1,8 @@
 import os
+import re
 
+def removenonutf8(l):
+    pass
 
 def filetolist(fname):
 
@@ -14,10 +17,20 @@ def filetolist(fname):
 
     return list(data_into_list)
 
+#regexp = re.compile(r'[^\x00-\x7f]')
+
 testpath = "/home/ray/PycharmProjects/Sprookjesgenerator/res/"
 
+regexp = re.compile(r'[^\x00-\x7f]')
+
 meisjesnamen=filetolist("meisjesnamen.txt")
+
+meisjesnamen = [str for str in meisjesnamen if not  regexp.search(str) ]
+
+
 jongensnamen=filetolist("jongensnamen.txt")
+jongensnamen = [str for str in jongensnamen if not regexp.search(str) ]
+
 zelfstandigenaamwoorden=filetolist("zelfstandigenaamwoorden.txt")
 werkwoorden=filetolist('werkwoorden.txt')
 persoonlijkevoornaamwoorden=['ik','jij','hij','wij','jullie','zij']
