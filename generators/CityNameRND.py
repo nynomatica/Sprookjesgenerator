@@ -1,10 +1,5 @@
 #todo make function for generating cityname in dutch
 
-# 1='a|e|i|o|u|oo|aa|oo|ee|oe|ui|ar|ij|oer|are,wegge|weg|ker|tten|tte|selo|sel|ster|st|mmen|ssen|rts|pert|l|chter|cht|mme|kel|k|kke|lst|lle|melo|ter';
-#   _2='j|h|b|br|d|dr|g|j||k|kr|kl|l|m|n|p|pr|r|s|sl|sch|sm|t|tr|v|w|z|zw,aa|a|e|i|o|u|oe|ui,weg|wegge|ker|kke|lke|lkke|lst|l|melo|tter|lle|cht|chter';
-#   _post='q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|dam|dam|dam|dam|veld|veld|velde|dorp|dorp|dorp|dorp|gat|gat|gat|gat|gat|stad|stad|stad|stad|dijk|hekse|trol|broek|broeke|huizen|huizen|brug|brug|brugge|berg|berg|berg|berg|donk|reus|bos|bos|bos|struik|struik|stoof|stoof|steen|geest|geest';
-#   _pre='q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|q|hoog|klein|groot|boven|neder|laag|';
-
 from random import random, choice, uniform
 
 from wordmanipulations.forbidden import forbidden

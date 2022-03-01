@@ -8,6 +8,8 @@ from generators.FamilyNameRND import familynamernd
 from generators.FemaleNameRND import femalernd
 from MaleNameRND import malename
 from functions.randomwalk import randomwalk
+import kivy
+
 
 
 class character():

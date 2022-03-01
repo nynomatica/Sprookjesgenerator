@@ -19,17 +19,17 @@ from character import character
 from city import city
 from generators.FamilyNameRND import familynamernd
 from world import world
-
+from klinker_medeklinker_groep import klinker_medeklinker_groep
 
 class myApp():
     def run(self):
         # for i in range(100):
         #     print(malename())
 
-        self.world =  world()
-        city(self.world)
-        character(self.world)
-        # print(self.world.citypopulation)
+        # self.world =  world()
+        # city(self.world)
+        # character(self.world)
+        # # print(self.world.citypopulation)
         # print(self.world.cityname)
         # print(self.world.charactername)
         # print(self.world.charactersex)
@@ -37,10 +37,11 @@ class myApp():
 
         # character.savetocvs(self,'/home/ray/Desktop/characters.csv',self.world)
         # , self.world)
+        print(klinker_medeklinker_groep("abboec"))
 
-        Sum = self.world.totalpopulation()
-        print(f"Total population {Sum}")
-        city.savetocvs(city,'/home/ray/Desktop/steden.csv',self.world)
+        # Sum = self.world.totalpopulation()
+        # print(f"Total population {Sum}")
+        # city.savetocvs(city,'/home/ray/Desktop/steden.csv',self.world)
 
 
 
